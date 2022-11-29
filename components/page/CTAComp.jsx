@@ -1,4 +1,4 @@
-const CTASection = () => {
+const CTAComp = () => {
 	return (
 		<>
 			<div className='bg-gray-50'>
@@ -31,4 +31,4 @@ const CTASection = () => {
 	);
 };
 
-export default CTASection;
+export default CTAComp;

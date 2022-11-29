@@ -1,6 +1,6 @@
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const Banner = () => {
+const BannerComp = () => {
 	return (
 		<>
 			<div className='bg-indigo-600'>
@@ -48,4 +48,4 @@ const Banner = () => {
 	);
 };
 
-export default Banner;
+export default BannerComp;

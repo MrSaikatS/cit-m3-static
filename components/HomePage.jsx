@@ -1,35 +1,29 @@
-import Link from "next/link";
+import PageCard from "./cards/PageCard";
+import AppCard from "./cards/AppCard";
+import EcomCard from "./cards/EcomCard";
 
 const HomePage = () => {
 	return (
 		<>
 			<div className='grid place-items-center w-screen h-screen'>
 				<div className=''>
-					<div className='font-bold text-5xl'>
-						CIT Module 3 Static Demo
+					<div className='font-bold text-5xl text-center'>
+						CIT Module 3 Static UI Demos
 					</div>
 
 					<div className='h-1 bg-black my-4'></div>
+				</div>
 
-					<div className='grid grid-flow-col place-items-center gap-4 text-xl'>
-						<Link
-							className='w-full text-center bg-fuchsia-500 rounded-xl px-8 py-4'
-							href='/pageui'>
-							Page UI
-						</Link>
+				{/* Cards */}
+				<div className='grid gap-6'>
+					{/* 1 */}
+					<PageCard />
 
-						<Link
-							className='w-full text-center bg-fuchsia-500 rounded-xl px-8 py-4'
-							href='/appui'>
-							Application UI
-						</Link>
+					{/* 2 */}
+					<AppCard />
 
-						<Link
-							className='w-full text-center bg-fuchsia-500 rounded-xl px-8 py-4'
-							href='/ecomui'>
-							Ecommerce UI
-						</Link>
-					</div>
+					{/* 3 */}
+					<EcomCard />
 				</div>
 			</div>
 		</>

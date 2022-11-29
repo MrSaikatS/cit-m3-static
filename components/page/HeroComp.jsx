@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const HeroSection = () => {
+const HeroComp = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	const navigation = [
@@ -247,4 +247,4 @@ const HeroSection = () => {
 	);
 };
 
-export default HeroSection;
+export default HeroComp;
